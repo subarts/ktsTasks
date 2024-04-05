@@ -1,5 +1,9 @@
 // @ts-nocheck
 
-const patchArrays = (): void => {};
+const patchArrays = (...arr): void => {
+  Array.prototype.count = function () {
+    return this.length;
+  };
+};
 
 export default patchArrays;
