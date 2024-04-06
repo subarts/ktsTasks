@@ -16,14 +16,6 @@ const patchArrays = (...arr): void => {
     }
     this.splice(index, 0, elem);
     return this;
-    /* 
-    if (index <= 0) {
-      return arr.unshift(elem);
-    }
-    if (index >= arr.length) {
-      return arr.push(elem);
-    }
-    return arr.splice(index, 0, elem); */
   };
 
   Array.prototype.remove = function (elem) {
