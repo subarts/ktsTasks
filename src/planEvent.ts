@@ -3,9 +3,7 @@ const planEvent = (fn, num) => {
     throw new Error('INVALID_ARGUMENT');
   }
   return new Promise((resolve, reject) => {
-    setTimeout((fn) => {
-      resolve(fn);
-    }, num);
+    setTimeout(fn, num);
   });
 };
 export default planEvent;
